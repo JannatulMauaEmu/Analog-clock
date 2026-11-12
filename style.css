@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.clock{
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 50%;
+    position: relative;
+    background: white;
+}
+
+.hand{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform-origin: bottom center;
+    border-radius: 10px;
+    transition: transform 1s linear;
+}
+
+.minute{
+    width: 5px;
+    height: 70px;
+    background: blue;
+    z-index: 2;
+}
+
+.second{
+    width: 3px;
+    height: 85px;
+    background: red;
+    z-index: 1;
+}
